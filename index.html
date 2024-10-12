@@ -47,6 +47,9 @@
             margin-top: 10px;
             font-size: 14px; /* フォントサイズを小さくする */
         }
+        .audio-player {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -67,6 +70,14 @@
         <a href="https://li.sten.to/PA-PI-NEON" class="button">配信サイト</a>
     </div>
 
+    <!-- Audio Player with 30 seconds playback -->
+    <div class="audio-player">
+        <audio id="audio" controls>
+            <source src="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=bpybl82o&dl=1" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素をサポートしていません。
+        </audio>
+    </div>
+
     <!-- Social Media Links -->
     <div class="social-links">
         <a href="https://www.youtube.com/@papiron-1240">YouTube</a> |
@@ -74,5 +85,17 @@
     </div>
 </div>
 
+<script>
+    function play30Seconds() {
+        var audio = document.getElementById('audio');
+        audio.currentTime = 0; // 再生位置を最初に設定
+        audio.play();
+        setTimeout(function() {
+            audio.pause(); // 30秒後に停止
+        }, 30000); // 30000ミリ秒 = 30秒
+    }
+</script>
+
 </body>
 </html>
+
