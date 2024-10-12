@@ -147,14 +147,11 @@
 
             // 音楽を自動で再生
             const audio = document.getElementById('audio');
-            if (audio.paused) {
-                audio.play().catch(error => {
-                    console.log("自動再生エラー:", error);
-                });
-            }
+            audio.play().catch(error => {
+                console.log("自動再生エラー:", error);
+            });
         }
     }, 100); // 10秒間で100%に達するように設定
-
 </script>
 
 </body>
