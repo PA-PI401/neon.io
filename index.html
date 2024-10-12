@@ -114,7 +114,7 @@
         <a href="https://li.sten.to/PA-PI-NEON" class="button">配信サイト</a>
     </div>
 
-    <!-- Audio Player (autoplay enabled) -->
+    <!-- Audio Player (with autoplay for supported browsers) -->
     <div class="audio-player">
         <audio id="audio" controls autoplay>
             <source src="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=bpybl82o&dl=1" type="audio/mpeg">
@@ -145,13 +145,14 @@
             document.getElementById('loading').style.display = 'none';
             document.querySelector('.content').style.display = 'block';
 
-            // 音楽を自動で再生
+            // 音楽の自動再生
             const audio = document.getElementById('audio');
             audio.play().catch(error => {
                 console.log("自動再生エラー:", error);
             });
         }
     }, 100); // 10秒間で100%に達するように設定
+
 </script>
 
 </body>
