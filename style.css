@@ -59,9 +59,8 @@ body {
 }
 
 .photo {
-    width: 100%; /* 写真のサイズ調整 */
-    max-width: 300px; /* 縦横比を保ちつつリサイズ */
-    margin: 10px;
+    width: calc(33.333% - 10px); /* 各写真の幅を調整 */
+    margin: 5px; /* 余白を追加 */
 }
 
 .button {
@@ -83,9 +82,16 @@ footer {
 @media only screen and (max-width: 600px) {
     #loader {
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    #content {
-        display: block;
+    .section-title {
+        font-size: 2rem; /* スマホで見出しを大きく */
+    }
+
+    .photo {
+        width: calc(100% - 10px); /* スマホ用に1列に表示 */
     }
 }
+
