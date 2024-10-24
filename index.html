@@ -3,55 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PA-PI Neon</title>
+    <title>PA-PI ネオン</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- 上部写真 -->
-        <img src="https://previews.dropbox.com/p/thumb/ACZzUygxcsX1S3rMIYAnPQ-zAJjYkJl84MEId1sgaG6kvQDHFHVLip_1DopfPX4Bq5gWeHqANS4wMRKOQMPkDuV4rcT2ydUKxME5tezt4138reYBZSSKaD-LicMWvHoluKKb8gQR9eGh5pAvGAwkG0cIS1Jrzjj8kGFjZNkvhJb26x52Xw8uGN2V-lqOsbG_L55gW6t01ea0lWP4Qt4pAMU2sbRX9QDbRN2EJ4W3Z7hrcfQeq35iEsJPtIXYk4mSvOkWCnD9yGvuVPQ5eNPF7CCix7_rQezPt1xF5JQa96JkyQju5RvWPODW4UGViZFqp4E/p.png" alt="PA-PI Neon Image" class="top-image">
-
-        <!-- アートワーク -->
-        <img src="https://previews.dropbox.com/p/thumb/ACZL-8xyLo7OiMlvD3lc2vlI2l8T_p53jl74e2tb_OTeVdSCzUH2M8YvozJMW4LvuzWB1HhbMruph9jgx0kuxolixctLfMCUwECuM_edbGCLwefHRTJkpq7PXrpSTrKmI63Rfj5H1eClOb2ECJArPGYdXMpXseWZb-mxY70wEDmm4DOo8OA5QmV3YWCoK7w3qycLn2qVPAhiARoUccAc2_Wf3rHT2hlKcNvMR4jgTGguxMUhyfjfvbfrDlOfFTiewN1NBfW9-WS35bCoXtRsfJ2qXzBcqZTv9YK_J7iT66RvOzVOeB7tU807NqpE0IAQp1k/p.jpeg" alt="PA-PI Artwork" class="artwork">
-
-        <!-- メニュー -->
-        <nav class="menu">
-            <ul>
-                <li><a href="#audio">Audio</a></li>
-                <li><a href="#video">Video</a></li>
-                <li><a href="#photo">Photo</a></li>
-            </ul>
-        </nav>
-
-        <!-- Audio Section -->
-        <section id="audio">
-            <h2>Audio</h2>
-            <a href="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=nvgsrjo7&dl=1" class="rainbow-btn">MP3 Download</a>
-            <a href="https://li.sten.to/PA-PI-NEON" class="rainbow-btn">Streaming</a>
-        </section>
-
-        <!-- Video Section -->
-        <section id="video">
-            <h2>Video</h2>
+    <div id="loader">
+        <div id="progress">0%</div>
+        <div id="progress-bar"></div>
+    </div>
+    <div id="content" style="display:none;">
+        <img src="https://previews.dropbox.com/p/thumb/ACZzUygxcsX1S3rMIYAnPQ-zAJjYkJl84MEId1sgaG6kvQDHFHVLip_1DopfPX4Bq5gWeHqANS4wMRKOQMPkDuV4rcT2ydUKxME5tezt4138reYBZSSKaD-LicMWvHoluKKb8gQR9eGh5pAvGAwkG0cIS1Jrzjj8kGFjZNkvhJb26x52Xw8uGN2V-lqOsbG_L55gW6t01ea0lWP4Qt4pAMU2sbRX9QDbRN2EJ4W3Z7hrcfQeq35iEsJPtIXYk4mSvOkWCnD9yGvuVPQ5eNPF7CCix7_rQezPt1xF5JQa96JkyQju5RvWPODW4UGViZFqp4E/p.png" alt="PA-PI Neon" class="image-small">
+        <h1>アートワーク</h1>
+        <img src="https://previews.dropbox.com/p/thumb/ACZL-8xyLo7OiMlvD3lc2vlI2l8T_p53jl74e2tb_OTeVdSCzUH2M8YvozJMW4LvuzWB1HhbMruph9jgx0kuxolixctLfMCUwECuM_edbGCLwefHRTJkpq7PXrpSTrKmI63Rfj5H1eClOb2ECJArPGYdXMpXseWZb-mxY70wEDmm4DOo8OA5QmV3YWCoK7w3qycLn2qVPAhiARoUccAc2_Wf3rHT2hlKcNvMR4jgTGguxMUhyfjfvbfrDlOfFTiewN1NBfW9-WS35bCoXtRsfJ2qXzBcqZTv9YK_J7iT66RvOzVOeB7tU807NqpE0IAQp1k/p.jpeg" alt="Artwork" class="image-large">
+        
+        <h2>項目</h2>
+        <div class="section">
+            <h3>Audio</h3>
+            <a href="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=nvgsrjo7&dl=1" class="button">MP3 DOWNLOAD</a>
+            <a href="https://li.sten.to/PA-PI-NEON" class="button">Streaming</a>
+        </div>
+        
+        <div class="section">
+            <h3>Video</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/mCumm3sL_nA" frameborder="0" allowfullscreen></iframe>
-        </section>
+        </div>
 
-        <!-- Photo Section -->
-        <section id="photo">
-            <h2>Photo</h2>
-            <div class="photo-gallery">
-                <img src="https://previews.dropbox.com/p/thumb/ACZL-8xyLo7OiMlvD3lc2vlI2l8T_p53jl74e2tb_OTeVdSCzUH2M8YvozJMW4LvuzWB1HhbMruph9jgx0kuxolixctLfMCUwECuM_edbGCLwefHRTJkpq7PXrpSTrKmI63Rfj5H1eClOb2ECJArPGYdXMpXseWZb-mxY70wEDmm4DOo8OA5QmV3YWCoK7w3qycLn2qVPAhiARoUccAc2_Wf3rHT2hlKcNvMR4jgTGguxMUhyfjfvbfrDlOfFTiewN1NBfW9-WS35bCoXtRsfJ2qXzBcqZTv9YK_J7iT66RvOzVOeB7tU807NqpE0IAQp1k/p.jpeg" alt="PA-PI Photo">
-                <img src="https://previews.dropbox.com/p/thumb/ACYqA7rtOEd_4003Ntx7wkBzOeu90lK5_Z9UxAjq4rcNNtBQojp5QqQpNmKRTv7snJurcIa7p_-zAwX4jBVckLuitKEQpf7RXabueMSCFc-wXnPadtLdYzpwdEohA6tq6S9kejfKv8Sk5oy1qHMxvVHMRR-UQwuv_iqDrqjcdvg7D6fx_pIOtla1fNTsKPbey0T-wqlpEwaMU7ncpVyINiE9-jZrpTCLeBzgME3Vbxcdwu3MOWtK8y9WHxLO-5q9kweJhR-A-kz4QeoSL7Xrgudeg5Wx0csLmky_lXUnuTEZ2m6Zr496ZLBw5SyZNZ4zwdk/p.jpeg" alt="PA-PI Photo">
-                <img src="https://previews.dropbox.com/p/thumb/ACbyP5s8Z2sjgniwUm5oPrT7ZlEpncntaZq0zhNkqtobTy1CYqolE1bPgyAW_tYctmUG-9TWU619YWY5B_s_cY5uMLNR8L7MliMg5JkJzvHzrMEwL_usOtAPpFHXQZSzckmnYaptBktayL6nTk5Ymnx4bMyI00YWNfGE8d_8A1NJjUFOwn9_mPNFqOAfmh70k740ExolEFUdKLJ8X_X7flj7r6GU4sxYCroKRQp04oMNFt4D2rfrkpi43P_64lImjGKe5aIdWaaTfKxLds3U-B47bFOIGuq4gcGa7ZoXAJ9dVEKeIZYITDmXSm7G-ZvHeJc/p.jpeg" alt="PA-PI Photo">
-            </div>
-        </section>
+        <div class="section">
+            <h3>Photo</h3>
+            <img src="https://previews.dropbox.com/p/thumb/ACZL-8xyLo7OiMlvD3lc2vlI2l8T_p53jl74e2tb_OTeVdSCzUH2M8YvozJMW4LvuzWB1HhbMruph9jgx0kuxolixctLfMCUwECuM_edbGCLwefHRTJkpq7PXrpSTrKmI63Rfj5H1eClOb2ECJArPGYdXMpXseWZb-mxY70wEDmm4DOo8OA5QmV3YWCoK7w3qycLn2qVPAhiARoUccAc2_Wf3rHT2hlKcNvMR4jgTGguxMUhyfjfvbfrDlOfFTiewN1NBfW9-WS35bCoXtRsfJ2qXzBcqZTv9YK_J7iT66RvOzVOeB7tU807NqpE0IAQp1k/p.jpeg" alt="Photo 1" class="photo">
+            <img src="https://previews.dropbox.com/p/thumb/ACYqA7rtOEd_4003Ntx7wkBzOeu90lK5_Z9UxAjq4rcNNtBQojp5QqQpNmKRTv7snJurcIa7p_-zAwX4jBVckLuitKEQpf7RXabueMSCFc-wXnPadtLdYzpwdEohA6tq6S9kejfKv8Sk5oy1qHMxvVHMRR-UQwuv_iqDrqjcdvg7D6fx_pIOtla1fNTsKPbey0T-wqlpEwaMU7ncpVyINiE9-jZrpTCLeBzgME3Vbxcdwu3MOWtK8y9WHxLO-5q9kweJhR-A-kz4QeoSL7Xrgudeg5Wx0csLmky_lXUnuTEZ2m6Zr496ZLBw5SyZNZ4zwdk/p.jpeg" alt="Photo 2" class="photo">
+            <img src="https://previews.dropbox.com/p/thumb/ACbyP5s8Z2sjgniwUm5oPrT7ZlEpncntaZq0zhNkqtobTy1CYqolE1bPgyAW_tYctmUG-9TWU619YWY5B_s_cY5uMLNR8L7MliMg5JkJzvHzrMEwL_usOtAPpFHXQZSzckmnYaptBktayL6nTk5Ymnx4bMyI00YWNfGE8d_8A1NJjUFOwn9_mPNFqOAfmh70k740ExolEFUdKLJ8X_X7flj7r6GU4sxYCroKRQp04oMNFt4D2rfrkpi43P_64lImjGKe5aIdWaaTfKxLds3U-B47bFOIGuq4gcGa7ZoXAJ9dVEKeIZYITDmXSm7G-ZvHeJc/p.jpeg" alt="Photo 3" class="photo">
+        </div>
 
-        <!-- SNS Links -->
         <footer>
-            <a href="https://www.youtube.com/@papiron-1240">Youtube</a> | 
+            <a href="https://www.youtube.com/@papiron-1240">Youtube</a>
             <a href="https://www.instagram.com/papiron.1240/?igsh=MTJmdm1uY2ppcTM0eg%3D%3D">Instagram</a>
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
