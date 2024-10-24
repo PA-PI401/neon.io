@@ -3,147 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PA-PI「ネオン」</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        .content {
-            display: none;
-        }
-        #loading {
-            display: block;
-            margin-top: 20%;
-        }
-        .progress-bar {
-            width: 100%;
-            height: 30px;
-            background-color: #ddd;
-            margin: 0 auto;
-            position: relative;
-            max-width: 300px;
-        }
-        .progress {
-            height: 100%;
-            background-color: #4caf50;
-            width: 0;
-        }
-        .percentage {
-            margin-top: 10px;
-            font-size: 20px;
-        }
-        .small-img {
-            width: 100px;
-            height: auto;
-            margin: 20px 0;
-        }
-        .buttons {
-            margin: 20px 0;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            color: white;
-            background-color: #007BFF;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .button:hover {
-            background-color: #0056b3;
-        }
-        .audio-player {
-            margin: 20px 0;
-        }
-        .social-links a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .social-links a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>PA-PI Neon</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <!-- 上部写真 -->
+        <img src="https://previews.dropbox.com/p/thumb/ACZzUygxcsX1S3rMIYAnPQ-zAJjYkJl84MEId1sgaG6kvQDHFHVLip_1DopfPX4Bq5gWeHqANS4wMRKOQMPkDuV4rcT2ydUKxME5tezt4138reYBZSSKaD-LicMWvHoluKKb8gQR9eGh5pAvGAwkG0cIS1Jrzjj8kGFjZNkvhJb26x52Xw8uGN2V-lqOsbG_L55gW6t01ea0lWP4Qt4pAMU2sbRX9QDbRN2EJ4W3Z7hrcfQeq35iEsJPtIXYk4mSvOkWCnD9yGvuVPQ5eNPF7CCix7_rQezPt1xF5JQa96JkyQju5RvWPODW4UGViZFqp4E/p.png" alt="PA-PI Neon Image" class="top-image">
 
-<!-- ローディング画面 -->
-<div id="loading">
-    <div class="progress-bar">
-        <div class="progress" id="progress"></div>
+        <!-- アートワーク -->
+        <img src="https://previews.dropbox.com/p/thumb/ACZL-8xyLo7OiMlvD3lc2vlI2l8T_p53jl74e2tb_OTeVdSCzUH2M8YvozJMW4LvuzWB1HhbMruph9jgx0kuxolixctLfMCUwECuM_edbGCLwefHRTJkpq7PXrpSTrKmI63Rfj5H1eClOb2ECJArPGYdXMpXseWZb-mxY70wEDmm4DOo8OA5QmV3YWCoK7w3qycLn2qVPAhiARoUccAc2_Wf3rHT2hlKcNvMR4jgTGguxMUhyfjfvbfrDlOfFTiewN1NBfW9-WS35bCoXtRsfJ2qXzBcqZTv9YK_J7iT66RvOzVOeB7tU807NqpE0IAQp1k/p.jpeg" alt="PA-PI Artwork" class="artwork">
+
+        <!-- メニュー -->
+        <nav class="menu">
+            <ul>
+                <li><a href="#audio">Audio</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#photo">Photo</a></li>
+            </ul>
+        </nav>
+
+        <!-- Audio Section -->
+        <section id="audio">
+            <h2>Audio</h2>
+            <a href="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=nvgsrjo7&dl=1" class="rainbow-btn">MP3 Download</a>
+            <a href="https://li.sten.to/PA-PI-NEON" class="rainbow-btn">Streaming</a>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video">
+            <h2>Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mCumm3sL_nA" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <!-- Photo Section -->
+        <section id="photo">
+            <h2>Photo</h2>
+            <div class="photo-gallery">
+                <img src="https://previews.dropbox.com/p/thumb/ACZL-8xyLo7OiMlvD3lc2vlI2l8T_p53jl74e2tb_OTeVdSCzUH2M8YvozJMW4LvuzWB1HhbMruph9jgx0kuxolixctLfMCUwECuM_edbGCLwefHRTJkpq7PXrpSTrKmI63Rfj5H1eClOb2ECJArPGYdXMpXseWZb-mxY70wEDmm4DOo8OA5QmV3YWCoK7w3qycLn2qVPAhiARoUccAc2_Wf3rHT2hlKcNvMR4jgTGguxMUhyfjfvbfrDlOfFTiewN1NBfW9-WS35bCoXtRsfJ2qXzBcqZTv9YK_J7iT66RvOzVOeB7tU807NqpE0IAQp1k/p.jpeg" alt="PA-PI Photo">
+                <img src="https://previews.dropbox.com/p/thumb/ACYqA7rtOEd_4003Ntx7wkBzOeu90lK5_Z9UxAjq4rcNNtBQojp5QqQpNmKRTv7snJurcIa7p_-zAwX4jBVckLuitKEQpf7RXabueMSCFc-wXnPadtLdYzpwdEohA6tq6S9kejfKv8Sk5oy1qHMxvVHMRR-UQwuv_iqDrqjcdvg7D6fx_pIOtla1fNTsKPbey0T-wqlpEwaMU7ncpVyINiE9-jZrpTCLeBzgME3Vbxcdwu3MOWtK8y9WHxLO-5q9kweJhR-A-kz4QeoSL7Xrgudeg5Wx0csLmky_lXUnuTEZ2m6Zr496ZLBw5SyZNZ4zwdk/p.jpeg" alt="PA-PI Photo">
+                <img src="https://previews.dropbox.com/p/thumb/ACbyP5s8Z2sjgniwUm5oPrT7ZlEpncntaZq0zhNkqtobTy1CYqolE1bPgyAW_tYctmUG-9TWU619YWY5B_s_cY5uMLNR8L7MliMg5JkJzvHzrMEwL_usOtAPpFHXQZSzckmnYaptBktayL6nTk5Ymnx4bMyI00YWNfGE8d_8A1NJjUFOwn9_mPNFqOAfmh70k740ExolEFUdKLJ8X_X7flj7r6GU4sxYCroKRQp04oMNFt4D2rfrkpi43P_64lImjGKe5aIdWaaTfKxLds3U-B47bFOIGuq4gcGa7ZoXAJ9dVEKeIZYITDmXSm7G-ZvHeJc/p.jpeg" alt="PA-PI Photo">
+            </div>
+        </section>
+
+        <!-- SNS Links -->
+        <footer>
+            <a href="https://www.youtube.com/@papiron-1240">Youtube</a> | 
+            <a href="https://www.instagram.com/papiron.1240/?igsh=MTJmdm1uY2ppcTM0eg%3D%3D">Instagram</a>
+        </footer>
     </div>
-    <div class="percentage" id="percentage">0%</div>
-</div>
-
-<div class="content">
-    <!-- 1st Image -->
-    <img src="https://yt3.ggpht.com/BphCeF2IwpS3VO3FmNQIzfYg1_BzmsY7LubK4k4HVcH9IhIIg7TEfD2XVXn2LOY7owdKvFWAZdHG4Q=s400-c-fcrop64=1,00000000ffffffff-rw-nd-v1" alt="PA-PI Image 1" class="small-img">
-    
-    <!-- 2nd Image -->
-    <img src="https://www.tunecore.co.jp/s3pna/tcj-image-production/u356520/r1227262/itd1227262.jpg" alt="PA-PI Image 2">
-    
-    <!-- Text below the second image -->
-    <h1>PA-PI「ネオン」</h1>
-
-    <!-- Buttons for Android and iPhone download -->
-    <div class="buttons">
-        <a href="#" class="button" id="android-download-btn">Android用ダウンロード</a>
-        <a href="#" class="button" id="iphone-download-btn">iPhone用ダウンロード</a>
-    </div>
-
-    <!-- Audio Player -->
-    <div class="audio-player">
-        <audio id="audio" controls>
-            <source src="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=bpybl82o&dl=1" type="audio/mpeg">
-            お使いのブラウザはオーディオ要素をサポートしていません。
-        </audio>
-    </div>
-
-    <!-- Social Media Links -->
-    <div class="social-links">
-        <a href="https://www.youtube.com/@papiron-1240">YouTube</a> |
-        <a href="https://www.instagram.com/papiron.1240/?igsh=MTJmdm1uY2ppcTM0eg%3D%3D">Instagram</a>
-    </div>
-</div>
-
-<script>
-    // ローディングの進行をシミュレートし、バーとパーセンテージを更新
-    let progress = 0;
-    const progressBar = document.getElementById('progress');
-    const percentageText = document.getElementById('percentage');
-
-    const interval = setInterval(() => {
-        progress += 1;
-        progressBar.style.width = progress + '%';
-        percentageText.textContent = progress + '%';
-
-        if (progress >= 100) {
-            clearInterval(interval);
-            document.getElementById('loading').style.display = 'none';
-            document.querySelector('.content').style.display = 'block';
-        }
-    }, 100); // 10秒間で100%に達するように設定
-    
-    // Android用の自動ダウンロード処理
-    document.getElementById('android-download-btn').addEventListener('click', function() {
-        const link = document.createElement('a');
-        link.href = 'https://drive.google.com/uc?export=download&id=1Hs9m8Ia6bTsjfV6SNjw6urx3kzfDorvR';
-        link.download = 'neon_android.mp3';
-        link.click();
-    });
-
-    // iPhone用の自動ダウンロード処理
-    document.getElementById('iphone-download-btn').addEventListener('click', function() {
-        const link = document.createElement('a');
-        link.href = 'https://drive.google.com/uc?export=download&id=1Hs9m8Ia6bTsjfV6SNjw6urx3kzfDorvR';
-        link.download = 'neon_iphone.mp3';
-        link.click();
-    });
-</script>
-
 </body>
 </html>
 
