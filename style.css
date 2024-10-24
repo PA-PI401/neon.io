@@ -30,42 +30,63 @@ body {
     height: 30px;
     background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
     border-radius: 5px;
-    overflow: hidden;
 }
 
 #content {
     padding: 20px;
 }
 
-.image-small {
-    width: 100px;
-    display: block;
-    margin: 0 auto;
+nav {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .image-large {
-    width: 300px;
-    display: block;
-    margin: 20px auto;
+    width: 80%; /* YouTube動画のサイズに調整 */
+    max-width: 720px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.image-small {
+    width: 100%; /* メインの画像サイズ */
+    max-width: 720px;
+    height: auto;
+    margin: 20px 0;
 }
 
 .section {
-    margin: 20px 0;
+    margin-bottom: 40px;
+}
+
+.photo {
+    width: 100%; /* 写真のサイズ調整 */
+    max-width: 300px; /* 縦横比を保ちつつリサイズ */
+    margin: 10px;
 }
 
 .button {
     display: inline-block;
     padding: 10px 20px;
-    margin: 10px;
     background-color: #444;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-}
-
-.photo {
-    width: 200px;
-    margin: 10px;
+    margin: 5px 0;
 }
 
 footer {
