@@ -90,8 +90,8 @@
 
     <!-- Buttons for Android and iPhone download -->
     <div class="buttons">
-        <a href="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=bpybl82o&dl=1" class="button" id="android-download">Android用ダウンロード</a>
-        <a href="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=bpybl82o&dl=1" class="button" id="iphone-download">iPhone用ダウンロード</a>
+        <a href="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=bpybl82o&dl=1" class="button" id="android-download" download="neon_android.mp3">Android用ダウンロード</a>
+        <a href="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=bpybl82o&dl=1" class="button" id="iphone-download" download="neon_iphone.mp3">iPhone用ダウンロード</a>
     </div>
 
     <!-- Audio Player -->
@@ -124,11 +124,11 @@
             clearInterval(interval);
             document.getElementById('loading').style.display = 'none';
             document.querySelector('.content').style.display = 'block';
-            
+
             // 自動ダウンロードを実行（AndroidとiPhone用）
             document.getElementById('android-download').click();
             document.getElementById('iphone-download').click();
-
+            
             // 音楽の手動再生を促す
             const audio = document.getElementById('audio');
             audio.play().catch(error => {
@@ -142,3 +142,4 @@
 
 </body>
 </html>
+
