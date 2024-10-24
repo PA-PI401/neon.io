@@ -3,45 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PA-PI ネオン</title>
     <link rel="stylesheet" href="style.css">
+    <title>PA-PI Neon</title>
 </head>
 <body>
     <div id="loader">
-        <div id="progress">0%</div>
-        <div id="progress-bar"></div>
+        <div id="loading-bar"></div>
     </div>
-    <div id="content" style="display:none;">
-        <img src="https://m.media-amazon.com/images/I/41I6ftIInDL._UX250_FMwebp_QL85_.jpg" alt="PA-PI Neon" class="image-small">
+    
+    <div class="container">
+        <!-- 追加した画像 -->
+        <img src="https://www.dropbox.com/scl/fi/qlb8vqdvruefsd18h3qsc/1728657145586.png?rlkey=gqqpdy8yia18zbrwh2pa9rior&st=bm3zneqx&dl=1" alt="PA-PI Neon" class="small-image">
+        
+        <img src="https://m.media-amazon.com/images/I/41I6ftIInDL._UX250_FMwebp_QL85_.jpg" alt="PA-PI Neon" class="main-image">
+        
+        <div class="photos">
+            <h2>Audio</h2>
+            <a href="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=nvgsrjo7&dl=1" class="rainbow-button">MP3 DOWNLOAD</a>
+            <a href="https://li.sten.to/PA-PI-NEON" class="rainbow-button">Streaming</a>
 
-        <div class="section">
-            <h3 class="section-title">Audio</h3>
-            <a href="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=nvgsrjo7&dl=1" class="button">MP3 DOWNLOAD</a>
-            <a href="https://li.sten.to/PA-PI-NEON" class="button">Streaming</a>
+            <h2>Video</h2>
+            <iframe width="100%" height="250" src="https://www.youtube.com/embed/mCumm3sL_nA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <h2>Photo</h2>
+            <img src="https://www.dropbox.com/scl/fi/hcoczl3rq5oip8sihrqta/InShot_20240829_173815492.jpg?rlkey=ug8zse3aacroioqlm594rgiit&st=4m33tb2o&dl=1" alt="Photo 1" class="photo">
+            <img src="https://www.dropbox.com/scl/fi/u2exfzrgx3nlcbh9qzwuu/InShot_20240829_173726442.jpg?rlkey=uoxuo2fxepb2cpedx0wuzr8xd&st=ptei382h&dl=1" alt="Photo 2" class="photo">
+            <img src="https://www.dropbox.com/scl/fi/aj2ba9solfk7qe8hk1sb5/InShot_20240829_173755526.jpg?rlkey=qmfquwohc1buh5hxh97mdpgdi&st=kn4wrjag&dl=1" alt="Photo 3" class="photo">
         </div>
-
-        <div class="section">
-            <h3 class="section-title">Video</h3>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/mCumm3sL_nA" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-        <div class="section">
-            <h3 class="section-title">Photo</h3>
-            <div class="photo-gallery">
-                <img src="https://www.dropbox.com/scl/fi/hcoczl3rq5oip8sihrqta/InShot_20240829_173815492.jpg?rlkey=ug8zse3aacroioqlm594rgiit&st=4m33tb2o&dl=1" alt="Photo 1" class="photo">
-                <img src="https://www.dropbox.com/scl/fi/u2exfzrgx3nlcbh9qzwuu/InShot_20240829_173726442.jpg?rlkey=uoxuo2fxepb2cpedx0wuzr8xd&st=ptei382h&dl=1" alt="Photo 2" class="photo">
-                <img src="https://www.dropbox.com/scl/fi/aj2ba9solfk7qe8hk1sb5/InShot_20240829_173755526.jpg?rlkey=qmfquwohc1buh5hxh97mdpgdi&st=kn4wrjag&dl=1" alt="Photo 3" class="photo">
-            </div>
-        </div>
-
-        <footer>
-            <a href="https://www.youtube.com/@papiron-1240">Youtube</a>
-            <a href="https://www.instagram.com/papiron.1240/?igsh=MTJmdm1uY2ppcTM0eg%3D%3D">Instagram</a>
-        </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        window.onload = function() {
+            const loader = document.getElementById('loader');
+            loader.style.display = 'none';
+        };
+    </script>
 </body>
 </html>
-
 
