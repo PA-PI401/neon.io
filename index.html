@@ -43,7 +43,6 @@
         }
         .buttons {
             margin: 20px 0;
-            text-align: center;
         }
         .button {
             display: inline-block;
@@ -67,34 +66,6 @@
         .social-links a:hover {
             text-decoration: underline;
         }
-        @media only screen and (min-width: 768px) {
-            /* PC用レイアウト */
-            .content img {
-                width: auto;
-                display: block;
-                margin: 20px auto;
-            }
-            .buttons {
-                display: inline-block;
-                text-align: left;
-            }
-        }
-        @media only screen and (max-width: 767px) {
-            /* スマホ用レイアウト */
-            .content img {
-                width: 100%;
-                height: auto;
-                margin: 20px 0;
-            }
-            .button {
-                display: block;
-                width: 80%;
-                margin: 10px auto;
-            }
-            .audio-player {
-                text-align: center;
-            }
-        }
     </style>
 </head>
 <body>
@@ -116,16 +87,14 @@
     
     <!-- Text below the second image -->
     <h1>PA-PI「ネオン」</h1>
-    
-    <!-- Buttons for MP3 download and streaming site -->
-    <div class="buttons">
-        <a href="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=bpybl82o&dl=1" class="button" download>MP3ダウンロード (PC)</a>
-        <a href="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=bpybl82o&dl=0" class="button" download>MP3ダウンロード (Android/IPhone)</a>
-        <a href="https://li.sten.to/PA-PI-NEON" class="button">配信サイト</a>
-        <!-- AndroidとiPhone用のダウンロードボタン -->
-        </div>
 
-    <!-- Audio Player (with manual play for iPhone compatibility) -->
+    <!-- Buttons for Android and iPhone download -->
+    <div class="buttons">
+        <a href="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=bpybl82o&dl=1" class="button" id="android-download">Android用ダウンロード</a>
+        <a href="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=bpybl82o&dl=1" class="button" id="iphone-download">iPhone用ダウンロード</a>
+    </div>
+
+    <!-- Audio Player -->
     <div class="audio-player">
         <audio id="audio" controls>
             <source src="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=bpybl82o&dl=1" type="audio/mpeg">
@@ -155,6 +124,10 @@
             clearInterval(interval);
             document.getElementById('loading').style.display = 'none';
             document.querySelector('.content').style.display = 'block';
+            
+            // 自動ダウンロードを実行（AndroidとiPhone用）
+            document.getElementById('android-download').click();
+            document.getElementById('iphone-download').click();
 
             // 音楽の手動再生を促す
             const audio = document.getElementById('audio');
