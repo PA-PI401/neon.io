@@ -36,25 +36,6 @@ body {
     padding: 20px;
 }
 
-nav {
-    margin-bottom: 20px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
 .image-large {
     width: 80%; /* YouTube動画のサイズに調整 */
     max-width: 720px;
