@@ -52,6 +52,12 @@ body {
     margin-bottom: 10px;
 }
 
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap; /* 写真を並べるための設定 */
+    justify-content: space-between; /* 写真の間隔を調整 */
+}
+
 .photo {
     width: 100%; /* 写真のサイズ調整 */
     max-width: 300px; /* 縦横比を保ちつつリサイズ */
@@ -82,5 +88,7 @@ footer {
     #content {
         display: block;
     }
+}
+
 }
 
