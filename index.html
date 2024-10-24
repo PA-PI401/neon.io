@@ -90,8 +90,8 @@
 
     <!-- Buttons for Android and iPhone download -->
     <div class="buttons">
-        <a href="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=bpybl82o&dl=1" class="button" id="android-download" download="neon_android.mp3">Android用ダウンロード</a>
-        <a href="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=bpybl82o&dl=1" class="button" id="iphone-download" download="neon_iphone.mp3">iPhone用ダウンロード</a>
+        <a href="#" class="button" id="android-download-btn">Android用ダウンロード</a>
+        <a href="#" class="button" id="iphone-download-btn">iPhone用ダウンロード</a>
     </div>
 
     <!-- Audio Player -->
@@ -124,22 +124,27 @@
             clearInterval(interval);
             document.getElementById('loading').style.display = 'none';
             document.querySelector('.content').style.display = 'block';
-
-            // 自動ダウンロードを実行（AndroidとiPhone用）
-            document.getElementById('android-download').click();
-            document.getElementById('iphone-download').click();
-            
-            // 音楽の手動再生を促す
-            const audio = document.getElementById('audio');
-            audio.play().catch(error => {
-                console.log("自動再生エラー:", error);
-                alert('音楽を再生するには、プレーヤーの再生ボタンを押してください。');
-            });
         }
     }, 100); // 10秒間で100%に達するように設定
     
+    // Android用のダウンロード処理
+    document.getElementById('android-download-btn').addEventListener('click', function() {
+        const link = document.createElement('a');
+        link.href = 'https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=bpybl82o&dl=1';
+        link.download = 'neon_android.mp3';
+        link.click();
+    });
+
+    // iPhone用のダウンロード処理
+    document.getElementById('iphone-download-btn').addEventListener('click', function() {
+        const link = document.createElement('a');
+        link.href = 'https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=bpybl82o&dl=1';
+        link.download = 'neon_iphone.mp3';
+        link.click();
+    });
 </script>
 
 </body>
 </html>
+
 
