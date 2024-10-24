@@ -36,13 +36,6 @@ body {
     padding: 20px;
 }
 
-.image-large {
-    width: 80%; /* YouTube動画のサイズに調整 */
-    max-width: 720px;
-    height: auto;
-    margin: 20px 0;
-}
-
 .image-small {
     width: 100%; /* メインの画像サイズ */
     max-width: 720px;
@@ -52,6 +45,11 @@ body {
 
 .section {
     margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 1.8rem; /* 見出しを大きく */
+    margin-bottom: 10px;
 }
 
 .photo {
@@ -74,3 +72,15 @@ footer {
     text-align: center;
     margin-top: 20px;
 }
+
+/* スマホのみに表示 */
+@media only screen and (max-width: 600px) {
+    #loader {
+        display: flex;
+    }
+
+    #content {
+        display: block;
+    }
+}
+
