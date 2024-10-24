@@ -35,8 +35,8 @@ body {
 }
 
 .small-image {
-    width: 80%; /* 小さく表示 */
-    max-width: 300px; /* 最大幅 */
+    width: 50%; /* ここを調整して画像を小さくします */
+    max-width: 150px; /* 最大幅を設定 */
 }
 
 .main-image {
@@ -52,6 +52,21 @@ body {
     width: 80%; /* フォトの幅 */
     max-width: 300px; /* 最大幅 */
     margin: 10px 0;
+}
+
+.rainbow-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.rainbow-button:hover {
+    transform: scale(1.1);
 }
 
 .rainbow-button {
