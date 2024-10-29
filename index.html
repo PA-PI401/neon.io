@@ -43,6 +43,16 @@
             color: #666;
         }
     </style>
+    <script>
+        function openPhotos() {
+            const links = [
+                "https://www.dropbox.com/scl/fi/hcoczl3rq5oip8sihrqta/InShot_20240829_173815492.jpg?rlkey=ug8zse3aacroioqlm594rgiit&st=gcv8tttb&dl=0",
+                "https://www.dropbox.com/scl/fi/u2exfzrgx3nlcbh9qzwuu/InShot_20240829_173726442.jpg?rlkey=uoxuo2fxepb2cpedx0wuzr8xd&st=lle1mkqc&dl=0",
+                "https://www.dropbox.com/scl/fi/aj2ba9solfk7qe8hk1sb5/InShot_20240829_173755526.jpg?rlkey=qmfquwohc1buh5hxh97mdpgdi&st=euzsgmat&dl=0"
+            ];
+            links.forEach(link => window.open(link, '_blank'));
+        }
+    </script>
 </head>
 <body>
     <!-- Image -->
@@ -59,9 +69,7 @@
         <a href="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=497a386q&dl=0" target="_blank">Audio</a>
         <a href="https://li.sten.to/PA-PI-NEON" target="_blank">Stream</a>
         <a href="https://youtu.be/mCumm3sL_nA?si=bLWIpkO3JeyGYGB7" target="_blank">Video</a>
-        <a href="https://www.dropbox.com/scl/fi/hcoczl3rq5oip8sihrqta/InShot_20240829_173815492.jpg?rlkey=ug8zse3aacroioqlm594rgiit&st=gcv8tttb&dl=0" target="_blank">Photo 1</a>
-        <a href="https://www.dropbox.com/scl/fi/u2exfzrgx3nlcbh9qzwuu/InShot_20240829_173726442.jpg?rlkey=uoxuo2fxepb2cpedx0wuzr8xd&st=lle1mkqc&dl=0" target="_blank">Photo 2</a>
-        <a href="https://www.dropbox.com/scl/fi/aj2ba9solfk7qe8hk1sb5/InShot_20240829_173755526.jpg?rlkey=qmfquwohc1buh5hxh97mdpgdi&st=euzsgmat&dl=0" target="_blank">Photo 3</a>
+        <a href="javascript:void(0);" onclick="openPhotos()">Photo</a>
     </div>
 
     <!-- Footer -->
