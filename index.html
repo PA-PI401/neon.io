@@ -56,12 +56,12 @@
     <script>
         function displayPhotos() {
             const photoLinks = [
-                "https://www.dropbox.com/scl/fi/hcoczl3rq5oip8sihrqta/InShot_20240829_173815492.jpg?rlkey=ug8zse3aacroioqlm594rgiit&st=cof9tx7v&dl=0&raw=1",
-                "https://www.dropbox.com/scl/fi/u2exfzrgx3nlcbh9qzwuu/InShot_20240829_173726442.jpg?rlkey=uoxuo2fxepb2cpedx0wuzr8xd&st=10s77f4j&dl=0&raw=1",
-                "https://www.dropbox.com/scl/fi/aj2ba9solfk7qe8hk1sb5/InShot_20240829_173755526.jpg?rlkey=qmfquwohc1buh5hxh97mdpgdi&st=npzu9dc6&dl=0&raw=1"
+                "https://www.dropbox.com/scl/fi/hcoczl3rq5oip8sihrqta/InShot_20240829_173815492.jpg?rlkey=ug8zse3aacroioqlm594rgiit&st=yob4x4a1&dl=0&raw=1",
+                "https://www.dropbox.com/scl/fi/u2exfzrgx3nlcbh9qzwuu/InShot_20240829_173726442.jpg?rlkey=uoxuo2fxepb2cpedx0wuzr8xd&st=ik1jndk4&dl=0&raw=1",
+                "https://www.dropbox.com/scl/fi/aj2ba9solfk7qe8hk1sb5/InShot_20240829_173755526.jpg?rlkey=qmfquwohc1buh5hxh97mdpgdi&st=t66g254f&dl=0&raw=1"
             ];
             const gallery = document.getElementById("photo-gallery");
-            gallery.innerHTML = "";
+            gallery.innerHTML = "";  // Clear previous content
             photoLinks.forEach(link => {
                 const img = document.createElement("img");
                 img.src = link;
@@ -72,8 +72,8 @@
 </head>
 <body>
     <!-- Image -->
-    <a href="https://www.dropbox.com/scl/fi/hcoczl3rq5oip8sihrqta/InShot_20240829_173815492.jpg?rlkey=ug8zse3aacroioqlm594rgiit&st=cof9tx7v&dl=0" target="_blank">
-        <img src="https://www.dropbox.com/scl/fi/hcoczl3rq5oip8sihrqta/InShot_20240829_173815492.jpg?rlkey=ug8zse3aacroioqlm594rgiit&st=cof9tx7v&dl=0&raw=1" alt="ネオン Image">
+    <a href="https://www.dropbox.com/scl/fi/hcoczl3rq5oip8sihrqta/InShot_20240829_173815492.jpg?rlkey=ug8zse3aacroioqlm594rgiit&st=yob4x4a1&dl=0" target="_blank">
+        <img src="https://www.dropbox.com/scl/fi/hcoczl3rq5oip8sihrqta/InShot_20240829_173815492.jpg?rlkey=ug8zse3aacroioqlm594rgiit&st=yob4x4a1&dl=0&raw=1" alt="ネオン Image">
     </a>
 
     <!-- Title -->
