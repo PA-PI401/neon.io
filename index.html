@@ -39,6 +39,14 @@
             border: none;
             cursor: pointer;
         }
+        .photo-gallery {
+            margin-top: 20px;
+        }
+        .photo-gallery img {
+            width: 80%;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
         footer {
             margin-top: 20px;
             font-size: 14px;
@@ -46,13 +54,19 @@
         }
     </style>
     <script>
-        function openPhotos() {
+        function displayPhotos() {
             const photoLinks = [
-                "https://www.dropbox.com/scl/fi/hcoczl3rq5oip8sihrqta/InShot_20240829_173815492.jpg?rlkey=ug8zse3aacroioqlm594rgiit&st=cof9tx7v&dl=0",
-                "https://www.dropbox.com/scl/fi/u2exfzrgx3nlcbh9qzwuu/InShot_20240829_173726442.jpg?rlkey=uoxuo2fxepb2cpedx0wuzr8xd&st=10s77f4j&dl=0",
-                "https://www.dropbox.com/scl/fi/aj2ba9solfk7qe8hk1sb5/InShot_20240829_173755526.jpg?rlkey=qmfquwohc1buh5hxh97mdpgdi&st=npzu9dc6&dl=0"
+                "https://www.dropbox.com/scl/fi/hcoczl3rq5oip8sihrqta/InShot_20240829_173815492.jpg?rlkey=ug8zse3aacroioqlm594rgiit&st=cof9tx7v&dl=0&raw=1",
+                "https://www.dropbox.com/scl/fi/u2exfzrgx3nlcbh9qzwuu/InShot_20240829_173726442.jpg?rlkey=uoxuo2fxepb2cpedx0wuzr8xd&st=10s77f4j&dl=0&raw=1",
+                "https://www.dropbox.com/scl/fi/aj2ba9solfk7qe8hk1sb5/InShot_20240829_173755526.jpg?rlkey=qmfquwohc1buh5hxh97mdpgdi&st=npzu9dc6&dl=0&raw=1"
             ];
-            photoLinks.forEach(link => window.open(link, '_blank'));
+            const gallery = document.getElementById("photo-gallery");
+            gallery.innerHTML = "";
+            photoLinks.forEach(link => {
+                const img = document.createElement("img");
+                img.src = link;
+                gallery.appendChild(img);
+            });
         }
     </script>
 </head>
@@ -71,11 +85,13 @@
         <a href="https://www.dropbox.com/scl/fi/eh1xjotnyc1ygx2zlub9u/.mp3?rlkey=dj51n1tjyf8ymbj6q7gr7wday&st=497a386q&dl=0" target="_blank">Audio</a>
         <a href="https://li.sten.to/PA-PI-NEON" target="_blank">Stream</a>
         <a href="https://youtu.be/mCumm3sL_nA?si=bLWIpkO3JeyGYGB7" target="_blank">Video</a>
-        <button onclick="openPhotos()">Photo</button>
+        <button onclick="displayPhotos()">Photo</button>
     </div>
+
+    <!-- Photo Gallery -->
+    <div id="photo-gallery" class="photo-gallery"></div>
 
     <!-- Footer -->
     <footer>© Salt Music Enter.</footer>
 </body>
 </html>
-
